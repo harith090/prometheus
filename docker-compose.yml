@@ -13,4 +13,6 @@ services:
 
 volumes:
   prometheus-data:
-    external: true
+
+configs:
+  external: true
