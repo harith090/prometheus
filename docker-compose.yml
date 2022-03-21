@@ -6,13 +6,11 @@ services:
     ports:
       - 9090:9090
     volumes:
-      - prometheus-config:/etc/prometheus
+      - ./prometheus:/etc/prometheus
       - prometheus-data:/prometheus
     command: --web.enable-lifecycle  --config.file=/etc/prometheus/prometheus.yml
 
 
 volumes:
   prometheus-data:
-    external: true
-  prometheus-config:
     external: true
