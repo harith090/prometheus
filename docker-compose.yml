@@ -14,3 +14,5 @@ services:
 volumes:
   prometheus-data:
     external: true
+  ./prometheus:
+    external: true
